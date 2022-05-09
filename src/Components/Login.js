@@ -3,7 +3,6 @@ import logi from "../UI/login1.png";
 import logo from '../UI/logo.png'
 import { useState } from "react";
 import { Grid, Container, FormControl, InputLabel, Input } from '@material-ui/core';
-import { Row, Col, Form, Button } from "react-bootstrap";
 
 
 
@@ -105,7 +104,7 @@ class LoginPage extends React.Component {
                             <center><img src={logo} style={{ marginTop: '5rem' }}></img></center>
                             <Grid style={{margin:'0 15%'}}>
                                 
-                                <Form className="form1login " onSubmit={this.handleSubmit} style={{}}>
+                                <form className="form1login " onSubmit={this.handleSubmit} style={{}}>
 
 
                                     <h1 className="HeadingSignLogin">Sign In</h1>
@@ -137,15 +136,15 @@ class LoginPage extends React.Component {
                                     <br />
                                     <a href="#" style={forgetlinklogin}>Forget Password?</a>
 
-                                    <Button className="buttonlogin" type="submit" style={ContainerLoginButton}>Sign In</Button>
+                                    <button className="buttonlogin" type="submit" style={ContainerLoginButton}>Sign In</button>
 
                                     <br />
 
 
-                                    <Row className="LastdivLogin">
+                                    <Grid className="LastdivLogin">
                                         <p className="p1NewAcc">Not register yet?<a href="#" className="p2NewAcc">Create an account</a></p>
-                                    </Row>
-                                </Form>
+                                    </Grid>
+                                </form>
                             </Grid>
                         </Container>
 

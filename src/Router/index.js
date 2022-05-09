@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router ,Route,Routes} from 'react-router-dom';
-import LoginPage from '../components/Login';
-import AccountSettings from '../components/AccountSetting'
+import LoginPage from '../Components/Login';
+import AccountSettings from '../Components/AccountSettings'
 
 function AppRouter (){
     return(

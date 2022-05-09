@@ -17,9 +17,10 @@ import logo from '../UI/logo.png'
 
 const drawerWidth = 290;
 
-export default function PermanentDrawerLeft() {
+export default function SideBar() {
   return (
-    <Box sx={{ display: 'flex' }}>
+    // <Box sx={{ display: 'flex' }}>
+    <React.Fragment>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -55,12 +56,13 @@ export default function PermanentDrawerLeft() {
         </List>
        
       </Drawer>
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
-      >
+      </React.Fragment>
+    //   <Box
+    //     component="main"
+    //     sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+    //   >
         
-      </Box>
-    </Box>
+    //   </Box>
+    // </Box>
   );
 }
