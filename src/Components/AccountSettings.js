@@ -11,11 +11,29 @@ class AccountSetting extends React.Component {
         this.state = { passwordType: "password", passwordInput: "", passwordType1: "password", passwordInput1: "" }
 
     }
-    
+
     render() {
-        const labelicons={
-        
+        const labelsLogin = {
+
         }
+        const inputstyle = {
+
+        }
+        const ContainerAccRow2ConChange = {
+            backgroundColor: "#F1F4F9",
+            color: '#1C1C1C',
+            margin: '2%',
+            paddingLeft: "1%",
+            paddingRight: "1%",
+            borderRadius: "5px",
+            border: "1px solid  1px solid #62C5C4"
+        };
+        const ContainerAccRow2ConRemove = {
+            backgroundColor: "white",
+            color: '#1C1C1C',
+            padding: "1%",
+            border: "0px solid"
+        };
         return (
             <React.Fragment>
                 <Box sx={{ display: 'flex' }}>
@@ -37,24 +55,24 @@ class AccountSetting extends React.Component {
 
                                 >
                                     <Grid>
-                                        <h4>Profile Photo</h4>
-                                        <Grid>
-                                            <img src={uimg} />
-                                            <button>Change</button>
-                                            <button>Remove</button>
+                                        <div className="divProf">
+                                            <h6>Profile photo</h6>
+                                            <img id="img1" src={uimg}></img>
+                                            <input id="chanbtn" type="button" value="Change" style={ContainerAccRow2ConChange}></input>
+                                            <input id="rembtn" type="button" value="Remove" style={ContainerAccRow2ConRemove}></input>
 
-                                        </Grid>
+                                        </div>
                                     </Grid>
                                     <Grid>
                                         <Grid>
-                                        <label style={ labelsLogin }>Name</label><br />
+                                            <label style={labelsLogin}>Name</label><br />
 
 
-<input id="emailLogin" required className="form-control inputslogin" style={inputstyle}></input>
-<label style={ labelsLogin }>Email</label><br />
+                                            <input id="emailLogin" required className="form-control inputslogin" style={inputstyle}></input>
+                                            <label style={labelsLogin}>Email</label><br />
 
 
-                                    <input id="emailLogin" required className="form-control inputslogin" style={inputstyle}></input>
+                                            <input id="emailLogin" required className="form-control inputslogin" style={inputstyle}></input>
                                         </Grid>
                                     </Grid>
 

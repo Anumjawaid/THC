@@ -7,109 +7,108 @@ import userimg from '../UI/userimg.png'
 import calendar from '../UI/calendarb.png'
 import watch from '../UI/clock.png'
 import gender from '../UI/gender.png' 
-
-// const datePickerCont={
-// backgroundColor: "#E5E5E5" 
-// };
-// const datePickerContRow1={
-//  backgroundColor: "transparent",
-// padding:'20px' 
-// };
-// const datePickerContDiv1={
-//  display:'flex',
-// justifyContent:"space-evenly"
-// };
-// const datePickerContDiv2={ 
-// display:'flex',
-// flexDirection:'column'
-// };
-// const datePickerContDiv2Img={
-//  marginLeft:'20px',
-// marginBottom:'15px'
-// };
-// const datePickerContDiv2Sel={
-//  backgroundColor: "transparent",
-// border:'0px'
-// };
-// const datePickerContDiv3={
-//  display:'flex',
-// flexDirection:'column'
-// };
-// const datePickerContDiv3Img={
-//  marginLeft:'20px',
-// marginBottom:'15px'
-// };
-// const datePickerContDiv3Sel={
-//  backgroundColor: "transparent",
-// border:'0px'
-// };
-// const datePickerContDiv4Sel={
-//  backgroundColor: "transparent",
-// border:'0px',
-// paddingLeft:'20px'
-// };
-// const tablecHead={
-// backgroundColor:"#436FB2",
-// color:'white',
-// borderRadius:'10px'
-// };
-// const tablecTab={
-// backgroundColor:'white' ,
-// padding:'10px'
-// };
-// const CardCoach1={ 
-// width: '15rem',
-// borderRadius: "4%"
-// };
-// const CardCoachP1={
-// fontWeight:'bold'
-// };
-// const CardCoachP2={
-// fontWeight:'lighter'
-// };
-
-
-
-// const topnavCont={
-// background:"transparent"
-// };
-// const topnavContDiv1={
-// display:'flex',
-// float:'right',
-// justifyContent:"flex-end"
-// };
-// const topnavContDiv2={
-// marginRight:'5px'
-// };
-// const topnavContDiv2P1={
-// fontSize:'18px',
-// fontWeight:'bolder'
-// };
-// const topnavContDiv2P2={
-// fontSize:'18px',
-// fontWeight:'normal',
-//  marginTop:'-20px'};
+import { Grid, Container, FormControl, InputLabel, Input } from '@material-ui/core';
+const datePickerCont={
+backgroundColor: "#E5E5E5" 
+};
+const datePickerContRow1={
+ backgroundColor: "transparent",
+padding:'20px' 
+};
+const datePickerContDiv1={
+ display:'flex',
+justifyContent:"space-evenly"
+};
+const datePickerContDiv2={ 
+display:'flex',
+flexDirection:'column'
+};
+const datePickerContDiv2Img={
+ marginLeft:'20px',
+marginBottom:'15px'
+};
+const datePickerContDiv2Sel={
+ backgroundColor: "transparent",
+border:'0px'
+};
+const datePickerContDiv3={
+ display:'flex',
+flexDirection:'column'
+};
+const datePickerContDiv3Img={
+ marginLeft:'20px',
+marginBottom:'15px'
+};
+const datePickerContDiv3Sel={
+ backgroundColor: "transparent",
+border:'0px'
+};
+const datePickerContDiv4Sel={
+ backgroundColor: "transparent",
+border:'0px',
+paddingLeft:'20px'
+};
+const tablecHead={
+backgroundColor:"#436FB2",
+color:'white',
+borderRadius:'10px'
+};
+const tablecTab={
+backgroundColor:'white' ,
+padding:'10px'
+};
+const CardCoach1={ 
+width: '15rem',
+borderRadius: "4%"
+};
+const CardCoachP1={
+fontWeight:'bold'
+};
+const CardCoachP2={
+fontWeight:'lighter'
+};
 
 
 
-// class Topnav extends React.Component{
-// render(){
-//     return(
+const topnavCont={
+background:"transparent",
+marginBottom:'90px'
+};
+const topnavContDiv1={
+display:'flex',
+float:'right',
+justifyContent:"flex-end"
+};
+const topnavContDiv2={
+marginRight:'5px'
+};
+const topnavContDiv2P1={
+fontSize:'18px',
+fontWeight:'bolder'
+};
+const topnavContDiv2P2={
+fontSize:'18px',
+fontWeight:'normal',
+ marginTop:'-20px'};
 
-//     <Container style={topnavCont}>
-//     <Row style={topnavCont}>
-//         <div className="userdiv" style={topnavContDiv1}>
-//             <div className="nametag" style={topnavContDiv2}>
-//                 <p style={topnavContDiv2P1}>Welcome Back</p>
-//                 <p style={topnavContDiv2P2}>&nbsp;&nbsp;&nbsp;&nbsp;David Roy</p>
-//             </div>
-//             <div className="image"><img src={userimg} /></div>
-//         </div>
-//     </Row>
-// </Container>
-//     );
-// }
-// }
+
+
+class Topnav extends React.Component{
+render(){
+    return(
+
+    <Grid style={topnavCont}>
+        <div className="userdiv" style={topnavContDiv1}>
+            <div className="nametag" style={topnavContDiv2}>
+                <p style={topnavContDiv2P1}>Welcome Back</p>
+                <p style={topnavContDiv2P2}>&nbsp;&nbsp;&nbsp;&nbsp;David Roy</p>
+            </div>
+            <div className="image"><img src={userimg} /></div>
+        </div>
+    </Grid>
+    );
+}
+}
 // class Shortcont extends React.Component{
 //   constructor(props){
 //     super()
@@ -275,4 +274,4 @@ class Footer extends React.Component{
 }
 
 // export{ Topnav,Tablec,Footer,DatePicker,Shortcont,Cardgraph}
-export {Footer}
+export {Topnav,Footer}
