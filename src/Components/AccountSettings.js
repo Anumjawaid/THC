@@ -22,11 +22,11 @@ class AccountSetting extends React.Component {
         const ContainerAccRow2ConChange = {
             backgroundColor: "#F1F4F9",
             color: '#1C1C1C',
-            margin: '2%',
-            paddingLeft: "1%",
-            paddingRight: "1%",
-            borderRadius: "5px",
-            border: "1px solid  1px solid #62C5C4"
+            // margin: '2%',
+            // padding:'0.5rem 1rem',
+            borderRadius: "8px",
+            border: "1px solid #62C5C4"
+
         };
         const ContainerAccRow2ConRemove = {
             backgroundColor: "white",
@@ -55,12 +55,16 @@ class AccountSetting extends React.Component {
 
                                 >
                                     <Grid>
-                                        <div className="divProf">
-                                            <h6>Profile photo</h6>
+                                        <div className="divProf" style={{display:'flex',flexDirection:'row'}}>
+                                            <div>
+                                            <h3>Profile photo</h3>
                                             <img id="img1" src={uimg}></img>
-                                            <input id="chanbtn" type="button" value="Change" style={ContainerAccRow2ConChange}></input>
-                                            <input id="rembtn" type="button" value="Remove" style={ContainerAccRow2ConRemove}></input>
+                                            </div>
 
+                                            <div style={{display:'',flexDirection:''}}>
+                                            <input id="chanbtn" type="button" value="Change" style={{}}></input>
+                                            <input id="rembtn" type="button" value="Remove" style={ContainerAccRow2ConRemove}></input>
+                                            </div>
                                         </div>
                                     </Grid>
                                     <Grid>

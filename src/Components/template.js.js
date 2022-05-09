@@ -5,7 +5,7 @@ import { Topnav,Footer } from './topnav';
 import { Grid, Container, FormControl, InputLabel, Input } from '@material-ui/core';
 
 
-class BookAppointment extends React.Component{
+class Template extends React.Component{
     constructor(props){
         super(props);
     }
@@ -40,4 +40,3 @@ class BookAppointment extends React.Component{
         )
     }
 }
-export default BookAppointment;
