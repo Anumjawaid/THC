@@ -8,6 +8,7 @@ import calendar from '../UI/calendarb.png'
 import watch from '../UI/clock.png'
 import gender from '../UI/gender.png' 
 import { Grid, Container, FormControl, InputLabel, Input } from '@material-ui/core';
+import { fontSize } from "@mui/system";
 const datePickerCont={
 backgroundColor: "#E5E5E5" 
 };
@@ -93,8 +94,18 @@ fontWeight:'normal',
 
 
 function ButtonStyle(props){
+  console.log(props,"props")
+  let fontSize
+  if(props.fontSize == null){
+    // ,fontSize:"24px"
+    fontSize="24px"
+  }
+  else{
+    fontSize=props.fontSize
+    console.log("N ELSE ",fontSize)
+  }
   return(
-    <button className="buttonlogin" type="submit" style={{backgroundColor: "#144B9F",width: props.width,height: props.height,borderRadius: "8px",color:'white',fontSize:"24px"}}>{props.text}</button>
+    <button className="buttonlogin" type="submit" style={{backgroundColor: "#144B9F",width: props.width,height: props.height,borderRadius: "8px",color:'white',fontSize:fontSize}}>{props.text}</button>
 
   )
 }

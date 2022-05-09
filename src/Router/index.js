@@ -3,6 +3,7 @@ import {BrowserRouter as Router ,Route,Routes} from 'react-router-dom';
 import LoginPage from '../Components/Login';
 import AccountSettings from '../Components/AccountSettings'
 import BookAppointment from '../Components/BookAppointment'
+import CoachDashboard from '../Components/coachDashboard'
 function AppRouter (){
     return(
         <>
@@ -17,6 +18,10 @@ function AppRouter (){
 
             <Routes>
             <Route path='/bookappointment' element={<BookAppointment/>}></Route>
+            </Routes>
+
+            <Routes>
+            <Route path='/coachdashboard' element={<CoachDashboard/>}></Route>
             </Routes>
         </Router>
         </>
