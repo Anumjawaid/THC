@@ -92,6 +92,12 @@ fontWeight:'normal',
  marginTop:'-20px'};
 
 
+function ButtonStyle(props){
+  return(
+    <button className="buttonlogin" type="submit" style={{backgroundColor: "#144B9F",width: props.width,height: props.height,borderRadius: "8px",color:'white',fontSize:"24px"}}>{props.text}</button>
+
+  )
+}
 
 class Topnav extends React.Component{
 render(){
@@ -274,4 +280,4 @@ class Footer extends React.Component{
 }
 
 // export{ Topnav,Tablec,Footer,DatePicker,Shortcont,Cardgraph}
-export {Topnav,Footer}
+export {Topnav,Footer,ButtonStyle}
