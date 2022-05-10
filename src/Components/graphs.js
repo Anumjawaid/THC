@@ -81,16 +81,6 @@ class Graphs extends React.Component {
           }
         return(
             <React.Fragment>
-                   {/* <Box sx={{ display: 'flex' }}>
-                    <SideBar /> */}
-
-                    {/* <Box
-                        component="main"
-                        sx={{ flexGrow: 1, bgcolor: '#F1F4F9', p: 3 }}
-                    >
-                       */}
-
-
                          <Grid container spacing={2}>
                                 <Grid item xs={12}>
                                     {/* <Item> */}
@@ -132,14 +122,6 @@ class Graphs extends React.Component {
                                 />
                                </div>
 
-
-                                
-                                
-                           
-                         
-
-                    {/* </Box> */}
-                    {/* </Box> */}
 
             </React.Fragment>
         )
