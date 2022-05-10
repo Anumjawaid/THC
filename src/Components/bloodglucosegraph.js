@@ -31,7 +31,8 @@ Chart.register(...registerables);
   }
 
   const para = {
-    paddingRight: "80%"
+    paddingTop: "20px",
+    paddingLeft: "10px"
   }
 
   const para2 = {
@@ -39,7 +40,10 @@ Chart.register(...registerables);
   }
 
   const buttonStyle = {
-    backgroundColor: "#144B9F"
+    backgroundColor: "#144B9F",
+    color: "white",
+    marginLeft: "10px",
+    marginBottom: "10px"
   }
   class BloodGlucoseGraph extends React.Component {
     constructor(props){
@@ -78,7 +82,7 @@ Chart.register(...registerables);
                         <Grid container spacing={2}>
                               <Grid item xs={12}>
                               <div style={colourDiv}>
-                                    <p style={para} className="p-2"><b>What your Result Means</b></p>
+                                    <p style={para}><b>What your Result Means</b></p>
                                     <p style={para2} >Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum
                                             dolor sit amet, Lorem  ipsum  dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor Lorem ipsum dolor sit amet,Lorem ipsum dolor Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, </p>
                                     
