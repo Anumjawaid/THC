@@ -41,6 +41,7 @@ class UserDetail extends React.Component {
                                     <h3>User Profile</h3>
                                     <Box component=""
                                         sx={{ flexGrow: 1, bgcolor: '#FFFFFF', p: 3 }}
+                                        style={{width:'652px'}}
 
                                     >
                                         <Grid style={{display:'flex',backgroundColor:'#F1F4F9',marginBottom:'1rem',padding:'1.5rem'}}>
@@ -48,19 +49,19 @@ class UserDetail extends React.Component {
                                             <p style={{marginLeft:'1rem'}}>Johnson</p>
                                         </Grid>
                                         <Grid style={{display:'flex',justifyContent:'space-between'}}>
-                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',borderRadius:'10px',padding:'0.5rem',marginRight:'1rem'}}>
+                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',width:'153px',borderRadius:'10px',padding:'0.5rem',marginRight:'1rem'}}>
                                                 <img src={gender} />
                                                 <p>Gender: Male</p>
                                             </div>
-                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',borderRadius:'10px',padding:'0.5rem',marginRight:'1rem' }}>
+                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',width:'153px',borderRadius:'10px',padding:'0.5rem',marginRight:'1rem' }}>
                                                 <img src={age} />
                                                 <p>Age: 32</p>
                                             </div>
-                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',borderRadius:'10px',padding:'0.5rem',marginRight:'1rem'}}>
+                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',width:'153px',borderRadius:'10px',padding:'0.5rem',marginRight:'1rem'}}>
                                                 <img src={weight} />
                                                 <p>Weight: 32kg</p>
                                             </div>
-                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',borderRadius:'10px',padding:'0.5rem'}}>
+                                            <div style={{borderRadius:'5px',backgroundColor:'#F1F4F9',width:'153px',borderRadius:'10px',padding:'0.5rem'}}>
                                                 <img src={height} />
                                                 <p>Height: 167cm</p>
                                             </div>
