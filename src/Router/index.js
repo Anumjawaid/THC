@@ -8,6 +8,7 @@ import BloodGlucoseGraph from '../Components/bloodglucosegraph';
 import BloodPressureGraph from '../Components/graph';
 import HealthCheckDetail from "../Components/healthcheckdetail";
 import UserDetail from '../Components/UserDetailPage'
+import UserDashboard from '../Components/UerDashboard'
 function AppRouter (){
     return(
         <>
@@ -32,6 +33,10 @@ function AppRouter (){
 
                 <Routes>
                 <Route path='/userdetail' element={<UserDetail/>}></Route>
+                </Routes>
+
+                <Routes>
+                <Route path='/userdashboard' element={<UserDashboard/>}></Route>
                 </Routes>
 
                

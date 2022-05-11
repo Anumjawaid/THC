@@ -9,12 +9,9 @@ import age from '../UI/age.png'
 import weight from '../UI/weight.png'
 import height from '../UI/height.png'
 import BasicTable from './topnav'
-import { Chart, registerables } from 'chart.js';
-import { Bubble, Line } from 'react-chartjs-2';
 
-Chart.register(...registerables);
 
-class UserDetail extends React.Component {
+class UserDashboard extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -76,7 +73,7 @@ class UserDetail extends React.Component {
 
                                 </Grid>
                                 <Grid>
-                                    <h3>History</h3>
+                                    <h3>Next Appointment</h3>
                                     <BasicTable />
                                 </Grid>
                             </Grid>
@@ -120,6 +117,7 @@ class UserDetail extends React.Component {
                                 <Grid style={{display:'flex',justifyContent:'space-between',marginBottom:'1.5rem'}}>
                                 <ChartCard color=" #FC1826" title="Blood Gluoose" data="1" text="Latest Result : 8 mmol/L" />
                                 
+                                
 
                                 </Grid>
                             </Grid>
@@ -136,59 +134,21 @@ class UserDetail extends React.Component {
     }
 }
 
-export default UserDetail;
+export default UserDashboard;
 function ChartCard(props) {
     // color,title,text
     let color = props.color;
     let titles = props.title;
     let text = props.text;
-    var stateData = [
-        {
-
-            backgroundColor: 'transparent',
-            borderColor: 'grey',
-
-            borderWidth: 2,
-            data: [0, 110, 60, 60, 60]   //this data needs to be passed in props for dynmic rendering
-        }
-    ]
-    const state = {
-        labels: ['Jan', 'Feb', 'Mar',
-            'Apr'],
-
-        datasets: stateData
-
-
-    }
+   
 
     return (
         <>
-        <div style={{display:'flex',flexDirection:'column'}}>
-        <div style={{backgroundColor:color,width:'300px'}}>
-            <Line
-
-                data={state}
-                height={"184px"}
-                color='#F8BC12'
-
-
-                options={{
-                    title: {
-                        display: true,
-                        fontSize: 20,
-                    },
-
-
-                    plugins: {
-                        legend: false
-                    },
-                }}
-            />
+        <div style={{backgroundColor:color,width:'300px',color:'white',height:'140px'}}>
+        <center><p ><span style={{fontWeight:'bold'}}>{titles}</span><br/>{text}</p></center>
+            
             </div>
-            <div style={{backgroundColor:'white' ,width:'300px'}}>
-                <p ><span style={{fontWeight:'bold'}}>{titles}</span><br/>{text}</p>
-            </div>
-            </div>
+           
         </>
     )
 }

@@ -306,6 +306,12 @@ export default function BasicTable(props) {
     return { name, calories, fat, carbs, protein };
   }
   
+  let tablerow=["Dessert","Desserts","Desserte4","Dessert5","Dessert7"]
+  let tabledata=[{'tab1':['a','b','c','d']},
+  {'tab2':['a','b','c','d']},
+  {'tab3':['a','b','c','d']},
+  {'tab4':['a','b','c','d']}
+]
   const rows = [
     createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
     createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
@@ -315,17 +321,17 @@ export default function BasicTable(props) {
   ];
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead style={{background: '#436FB2', fontColor:'#FFFFFF'}}>
+      <Table sx={{ minWidth: 650,color:'#FFFFFF' }} aria-label="simple table">
+        <TableHead style={{background: '#436FB2', color:'white'}}>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            {tablerow.map((value)=>(
+                   <TableCell style={{color:'white',fontWeight:'bold'}}>{value}</TableCell>
+            ))
+          }
+           
           </TableRow>
         </TableHead>
-        <TableBody>
+        <TableBody sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
           {rows.map((row) => (
             <TableRow
               key={row.name}
@@ -340,6 +346,7 @@ export default function BasicTable(props) {
               <TableCell align="right">{row.protein}</TableCell>
             </TableRow>
           ))}
+          
         </TableBody>
       </Table>
     </TableContainer>
