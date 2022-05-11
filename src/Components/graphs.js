@@ -14,6 +14,12 @@ const colour = {
     backgroundColor: "#e8f4f8"
   
   }
+
+  const para = {
+    paddingTop: "10px",
+    color: "white",
+    paddingBottom: "5px"
+  }
   
   const DivStyle = {
     backgroundColor: "#7293C5", 
@@ -85,9 +91,9 @@ class Graphs extends React.Component {
                                 <Grid item xs={12}>
                                     {/* <Item> */}
                                     <div style={firstDiv}>
-                                    <center><p className="pt-3" ><b>Blood Pressure</b></p></center>  
-                                    <center> <p className="text-light">Current Result: 7/7 mmHg</p></center>  
-                                    <center>  <p className="text-light pb-3" >Poor</p></center>  
+                                    <center><p style={para} ><b>Blood Pressure</b></p></center>  
+                                    <center> <p style={para}>Current Result: 7/7 mmHg</p></center>  
+                                    <center>  <p style={para} >Poor</p></center>  
                                     </div>
                                     {/* </Item> */}
                                 </Grid>

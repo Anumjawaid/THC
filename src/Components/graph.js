@@ -66,7 +66,7 @@ class BloodPressureGraph extends React.Component{
                        
                            
                           
-                       <h5 ><b>Your Last Check</b></h5>
+                       <h3><b>Your Last Check</b></h3>
                        <Grid container spacing={2}>
                             <Grid item xs={12}>
                             <div style={FirstDiv}> 

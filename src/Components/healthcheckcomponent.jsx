@@ -25,13 +25,13 @@ class HealthCheckComponent extends React.Component{
                       {/* Drawer */}
                       <Card style={CardStyle}>
                         <CardContent>
-                           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                           {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom> */}
                             <center>
-                                <p className="text-light"><b>{this.props.title}</b></p>
-                                 <p className="text-light"><b>{this.props.unit}</b></p>
+                                <p style={{color: "white"}}><b>{this.props.title}</b></p>
+                                 <p style={{color: "white"}}><b>{this.props.unit}</b></p>
 
                             </center>
-                            </Typography>
+                            {/* </Typography> */}
 
                              
                         </CardContent>
