@@ -82,7 +82,7 @@ class HealthCheckHistory extends React.Component{
                         <Grid container spacing={2}>
                           {
                                 this.state.date.map((i) => {
-                                    return <Grid item xs={4} style={colour}>
+                                    return <Grid item xs={4} style={{padding:'2rem'}}>
                                         <CardComponent text="Date Of Assessment" date = {i} /><br/>
                                         </Grid>
                                 })

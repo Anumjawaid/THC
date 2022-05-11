@@ -14,10 +14,12 @@ import AppsIcon from '@material-ui/icons/Apps';
 import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import SettingsIcon from '@material-ui/icons/Settings';
+import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 290;
 
 export default function SideBar() {
+  let history=useNavigate()
   const listItems=[
     {text:"Dashboard",
      icon:<AppsIcon/>,
@@ -61,7 +63,9 @@ export default function SideBar() {
        
         <List>
           {listItems.map((text, index) => (
-            <ListItem button key={text.text} style={{color:' #62C5C4',fontSize:'18px'}}>
+            <ListItem button key={text.text}
+            onClick={()=>history(text.path)}
+             style={{color:' #62C5C4',fontSize:'18px'}}>
               <ListItemIcon style={{color:' #62C5C4',fontSize:'18px'}}>
                 {text.icon}
               </ListItemIcon>

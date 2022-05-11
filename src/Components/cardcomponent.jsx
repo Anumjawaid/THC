@@ -12,7 +12,7 @@ import { CardHeader } from '@mui/material';
 
 
 const CardStyle = {
-    width: '18rem',
+    width: '20rem',
     borderRadius: "4%"
 
 }
